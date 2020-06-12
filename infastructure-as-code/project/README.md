@@ -1,12 +1,12 @@
 # Infrastructure as Code
 
-This folder contains the files used in the project for lesson 3.
+This folder contains the files used in the project for chapter 3.
 
 * [scripts](/scripts): contains the scripts used to easy the code deployment from the awscli.
 * [cloudformation](/cloudformation): containes the CloudFormation recipes used to deploy the infrastructure.
 
 ## Infrastrucutre Diagram
-As summary of the infrastrucutre create check the image below:
+As summary of the infrastrucutre created check the image below:
 
 ![Infrastructure](/project-iac/UdacityProject.svg)
 

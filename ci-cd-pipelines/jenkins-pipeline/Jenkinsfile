@@ -12,7 +12,7 @@ pipeline {
         }
         stage('Lint HTML') {
             steps {
-                sh 'tidy -q -e ci-cd-pipelines/*.html'
+                sh 'tidy -q -e ci-cd-pipelines/jenkins-pipeline/*.html'
             }
         }
         stage('Scan') {
@@ -23,7 +23,7 @@ pipeline {
         stage('Upload to AWS') {
             steps {
                 withAWS(region:'us-east-1', credentials: 'jenkins') {
-                    s3Upload(pathStyleAccessEnabled:true, payloadSigningEnabled: true, file:'ci-cd-pipelines/index.html', bucket:'udacity-pipeline-s3')
+                    s3Upload(pathStyleAccessEnabled:true, payloadSigningEnabled: true, file:'ci-cd-pipelines/jenkins-pipeline/index.html', bucket:'udacity-pipeline-s3')
                 }
             }
         }
