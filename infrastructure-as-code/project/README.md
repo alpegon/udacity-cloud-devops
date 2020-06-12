@@ -8,7 +8,7 @@ This folder contains the files used in the project for chapter 3.
 ## Infrastrucutre Diagram
 As summary of the infrastrucutre created check the image below:
 
-![Infrastructure](/project-iac/UdacityProject.svg)
+![Infrastructure](/infrastructure-as-code/project/UdacityProject.svg)
 
 ## Usage
 To simplify the creation of the infrastructure we will use the scripts of the scripts folder. The script parses the first parameter as the stack name, and then expects the template body and the parameter files.
